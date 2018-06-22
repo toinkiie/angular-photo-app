@@ -1,0 +1,5 @@
+<div class="wrapper-fluid">
+  <app-search-box [pagination]="pagination" [loading]="loading" (searchPhoto)="searchPhoto($event)"></app-search-box>
+  <app-search-results [photos]="photos"></app-search-results>
+  <app-page-loading [loading]="loading"></app-page-loading>
+</div>

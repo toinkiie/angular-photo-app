@@ -1,0 +1,32 @@
+.photo__title {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.photo__owner {
+    font-size: 14px;
+    font-weight: 500;
+}
+.photo__badge {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 2px 5px;
+    background: dodgerblue;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.back-button {
+    color: deepskyblue;
+    cursor: pointer;
+    transition: color 0.25s;
+}
+.back-button:link {
+    color: deepskyblue;
+    transition: color 0.25s;
+}
+
+.back-button:hover,
+.back-button:link:hover  {
+    color: darkmagenta;
+    transition: color 0.25s;
+}

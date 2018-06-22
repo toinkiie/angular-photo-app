@@ -1,0 +1,23 @@
+<div class="cards" *ngIf="photos.length > 0">
+  <div class="card" *ngFor="let photo of photos" (click)="onClick(photo.id)">
+    <div class="card__header">
+        <div class="grid-2">
+          <div class="col-1">
+              <span class="card__owner-initial">{{ photo.ownername | firstLetter }}</span> 
+              <small>{{ photo.ownername }}</small>
+          </div>
+          <div class="col-1 text-right">
+              <span class="card__views">Views: {{photo.views | number}}</span>
+          </div>
+        </div>
+    </div>
+    <div class="card__media" [style.backgroundImage]="photo.url_m|sanitize">
+
+    </div>
+    <div class="card__body">
+    </div>
+    <div class="card__footer">
+        {{ photo.title||'Untitled'}}
+    </div>
+  </div>
+</div>

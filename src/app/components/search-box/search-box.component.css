@@ -1,0 +1,40 @@
+.searchbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border: solid 1px #dbdbdb;
+    width: 100%;
+    padding: 20px 0;
+    height: 75px;
+    box-sizing: border-box;
+}
+
+.searchbox__wrapper {
+    padding: 0 40px;
+    display: flex;
+}
+.searchbox__wrapper div.col-1 {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.form__input {
+    font-size: 14px;
+    color: #999;
+    background: #fafafa;
+    padding: 8px;
+    border: solid 1px cornflowerblue;
+    border-radius: 3px;
+    display: inline;
+}
+
+.form__button {
+    border: 0;
+    color: #fff;
+    background: cornflowerblue;
+    padding: 8px;
+    border: solid 1px cornflowerblue;
+    display: inline;
+    z-index: 100;
+}

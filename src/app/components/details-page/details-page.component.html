@@ -1,0 +1,36 @@
+<div *ngIf="null !== photo">
+
+
+  <div class="card card--lg">
+      <div class="card__header">
+        <a class="back-button" (click)="goBack($event)">&larr; Back</a>
+      </div>
+
+      <img [src]="photo|photoPath" alt="">
+
+      <div class="card__body cad--lg">
+
+          <h1 class="photo__title">
+            {{photo.title}}
+          </h1>
+          <div class="photo__owner">
+            {{photo.ownername}}
+          </div>
+          <p>{{ photo.description|stripTags }}</p>
+          <p><b>Date Posted:</b> {{ photo.dates.posted|date: 'mediumDate'}}<br/></p>
+          <p><b>Date Taken:</b> {{ photo.dates.taken|date: 'mediumDate'}}</p>
+          <div>
+            <p>Tags:</p>
+            <div>
+              <div *ngFor="let tag of photo.tags" class="photo__badge">{{tag}}</div>
+            </div>
+          </div>
+      </div>
+      <div class="card__footer">
+        <small>
+          Views: {{photo.views|number}}
+        </small>
+      </div>
+    </div>
+
+</div>

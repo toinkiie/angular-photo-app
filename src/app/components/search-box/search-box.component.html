@@ -1,0 +1,15 @@
+<div class="searchbox">
+  <div class="searchbox__wrapper">
+        <div class="col-1">
+            <app-page-stats [pagination]="pagination"></app-page-stats>
+        </div>
+        <div class="col-1 text-right no-wrap">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate autocomplete="off">
+            <div class="form__inline">
+                <input type="search" class="form__input" placeholder="Photos" name="query" ngModel required>
+                <button class="form__button" type="submit" role="button" [disabled]="!f.valid">Search</button>
+            </div>
+        </form>
+        </div>
+  </div>
+</div>
